@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+        android:background="#e7feff"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNames"
+        android:onClick="OpenMeny"
+        android:layout_width="411dp"
+        android:layout_height="523dp"
+        android:background="@drawable/first_back"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="368dp"
+        android:layout_height="66dp"
+        android:text="Нормативы"
+        android:textSize="50dp"
+        android:textColor="#42AAFF"
+        app:layout_constraintBottom_toTopOf="@+id/rvNames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"></TextView>
+
+    <TextView
+        android:id="@+id/Name2"
+
+        android:layout_width="153dp"
+        android:layout_height="36dp"
+        android:text="Выбери стиль"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/rvNames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
